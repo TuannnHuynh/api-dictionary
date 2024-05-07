@@ -1,0 +1,299 @@
+@-webkit-keyframes hide_slide {
+  0% {
+    background-color: #e41749;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    opacity: 1;
+  }
+  40% {
+    background-color: #e41749;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 0.8;
+  }
+  80% {
+    background-color: #e41749;
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+    opacity: 0.6;
+  }
+  100% {
+    background-color: #e41749;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes hide_slide {
+  0% {
+    background-color: #e41749;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    opacity: 1;
+  }
+  40% {
+    background-color: #e41749;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 0.8;
+  }
+  80% {
+    background-color: #e41749;
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+    opacity: 0.6;
+  }
+  100% {
+    background-color: #e41749;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes show_slide {
+  0% {
+    background-color: #e41749;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0.2;
+  }
+  40% {
+    background-color: #e41749;
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+    opacity: 0.6;
+  }
+  80% {
+    background-color: #e41749;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 0.8;
+  }
+  100% {
+    background-color: #e41749;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    opacity: 1;
+  }
+}
+
+@keyframes show_slide {
+  0% {
+    background-color: #e41749;
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    opacity: 0.2;
+  }
+  40% {
+    background-color: #e41749;
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+    opacity: 0.6;
+  }
+  80% {
+    background-color: #e41749;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+    opacity: 0.8;
+  }
+  100% {
+    background-color: #e41749;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    opacity: 1;
+  }
+}
+
+body {
+  position: relative;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+header {
+  height: 50px;
+  background-color: #0a7be9;
+}
+
+.alert {
+  position: fixed;
+  top: 10%;
+  left: 5%;
+  background-color: #e41749;
+  border-radius: 4px;
+}
+
+.alert span {
+  display: inline-block;
+  padding: 12px 24px;
+  color: #fff;
+  font-size: 28px;
+}
+
+.alert span i {
+  margin-right: 8px;
+  font-size: 30px;
+}
+
+.show {
+  -webkit-animation: show_slide 1.2s ease forwards;
+          animation: show_slide 1.2s ease forwards;
+}
+
+.hide {
+  -webkit-animation: hide_slide 1.2s ease forwards;
+          animation: hide_slide 1.2s ease forwards;
+}
+
+.dict {
+  margin-top: 130px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dict .container h1 {
+  text-align: center;
+  color: #0a7be9;
+  margin-bottom: 28px;
+  font-size: 48px;
+}
+
+.dict .container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dict .container form input {
+  border: 2px solid #0a7be9;
+  padding: 10px 20px;
+  font-size: 18px;
+  width: 420px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.dict .container form input::-webkit-input-placeholder {
+  color: #999;
+}
+
+.dict .container form input:-ms-input-placeholder {
+  color: #999;
+}
+
+.dict .container form input::-ms-input-placeholder {
+  color: #999;
+}
+
+.dict .container form input::placeholder {
+  color: #999;
+}
+
+.dict .container form button {
+  color: #fff;
+  background-color: #0a7be9;
+  cursor: pointer;
+  padding: 0 26px;
+  font-size: 16.8px;
+  font-weight: 600;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.dict-result {
+  margin-top: 35px;
+}
+
+.dict-result .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dict-result .container .card {
+  width: 700px;
+}
+
+.dict-result .container .card .dict-word {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5px 2px 5px;
+}
+
+.dict-result .container .card .dict-word .key-word .word {
+  color: #0a7be9;
+  font-weight: bold;
+  font-size: 38px;
+  margin-right: 4px;
+}
+
+.dict-result .container .card .dict-word .key-word .phonetic {
+  color: #333;
+  font-size: 26px;
+  margin-right: 10px;
+}
+
+.dict-result .container .card .dict-word .language span i {
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 26px;
+  color: #333;
+}
+
+.dict-result .container .card .dict-meanings .meaning {
+  padding: 20px 5px 0px 5px;
+}
+
+.dict-result .container .card .dict-meanings .meaning h3 {
+  color: #3d3d3d;
+  display: inline-block;
+  font-size: 28px;
+  margin-bottom: 25px;
+  background-color: #f3f3f3;
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.dict-result .container .card .dict-meanings .meaning .definition {
+  margin-bottom: 8px;
+}
+
+.dict-result .container .card .dict-meanings .meaning .example {
+  margin-bottom: 15px;
+}
+
+.dict-result .container .card .dict-meanings .meaning .definition,
+.dict-result .container .card .dict-meanings .meaning .example {
+  color: #333;
+  font-size: 22px;
+  text-align: justify;
+}
+
+.dict-result .container .card .dict-meanings .meaning .definition span,
+.dict-result .container .card .dict-meanings .meaning .example span {
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 120px;
+}
+/*# sourceMappingURL=style.css.map */
